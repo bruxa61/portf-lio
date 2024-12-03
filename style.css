@@ -85,7 +85,140 @@ header .btn-contato button:hover {
 
 /* PARTE 01 */
 section.parte1 {
-    padding: 160px 4%;
+    padding: 240px 4%;
+}
+
+@media (max-width: 1700px){
+    section.parte1{
+        padding: 160px 4%;
+    }
+
+    .habilidades h1 {
+        font-weight: 450;
+        font-size: 30px;
+        margin-top: 20px;
+        padding: 20px 27%;
+    }
+
+    .ferramentas h1 {
+        font-weight: 450;
+        font-size: 30px;
+        padding: 40px 33%;
+        margin-top: 40px;
+        color: #DBD1BD;
+    }
+
+    .certificados h1 {
+        font-weight: 500;
+        font-size: 30px;
+        margin-top: 20px;
+        padding: 0px 27%;
+        color: #F6EEE1;
+        margin-left: 110px;
+    }
+
+    .contato {
+        background-color: #FBB620;
+        width: 105vh;
+        height: 75vh;
+        margin-top: 80px;
+        margin-left: 100px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        position: relative;
+    }
+
+    .pastas #certfCLOUD{
+        top: 170px;
+        left: 30px;
+    }
+    
+    .pastas #certfAWS{
+        top: 170px;
+        left: 220px;
+    }
+    
+    .pastas #certfCISCO{
+        top: 170px;
+        left: 410px;
+    }
+    
+    .pastas #certfSENAI{
+        top: 330px;
+        left: 30px;
+    }
+
+    .icons #email{
+        top: 110px;
+        left: 140px;
+    }
+    
+    .icons #whatsapp{
+        top: 165px;
+        left: 132px;
+        width: 10%;
+    }
+    
+    .icons #insta{
+        top: 230px;
+        left: 140px;
+    }
+    
+    .icons #linkedin{
+        top: 295px;
+        left: 140px;
+    }
+    
+    .icons #github{
+        top: 355px;
+        left: 137px;
+        width: 8%;
+    }
+    
+    .icons #emailRAFA{
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        top: 115px;
+        left: 195px;
+        font-size: 20px;
+    }
+    
+    .icons #whatsappRAFA{
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        top: 175px;
+        left: 195px;
+        font-size: 20px;
+    }
+    
+    .icons #instaRAFA{
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        top: 238px;
+        left: 195px;
+        font-size: 20px;
+    }
+    
+    .icons #linkedinRAFA{
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        top: 303px;
+        left: 195px;
+        font-size: 20px;
+    }
+    
+    .icons #githubRAFA{
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        top: 366px;
+        left: 195px;
+        font-size: 20px;
+    }
 }
 
 .flex {
@@ -174,7 +307,7 @@ section.parte1 .flex {
     font-weight: 450;
     font-size: 30px;
     margin-top: 20px;
-    padding: 20px 27%;
+    padding: 20px 32%;
 }
 
 .habilidades ul {
@@ -198,7 +331,7 @@ section.parte1 .flex {
 .ferramentas h1 {
     font-weight: 450;
     font-size: 30px;
-    padding: 40px 33%;
+    padding: 40px 37%;
     margin-top: 40px;
     color: #DBD1BD;
 }
@@ -346,7 +479,7 @@ button #direita {
     font-weight: 500;
     font-size: 30px;
     margin-top: 20px;
-    padding: 0px 27%;
+    padding: 0px 33%;
     color: #F6EEE1;
     margin-left: 110px;
 }
@@ -373,31 +506,31 @@ button #direita {
 }
 
 .pastas #certfCLOUD{
-    top: 170px;
+    top: 190px;
     left: 30px;
 }
 
 .pastas #certfAWS{
-    top: 170px;
-    left: 220px;
+    top: 190px;
+    left: 250px;
 }
 
 .pastas #certfCISCO{
-    top: 170px;
-    left: 410px;
+    top: 190px;
+    left: 480px;
 }
 
 .pastas #certfSENAI{
-    top: 330px;
+    top: 370px;
     left: 30px;
 }
 
 .contato {
     background-color: #FBB620;
-    width: 105vh;
-    height: 75vh;
+    width: 75vh;
+    height: 65vh;
     margin-top: 80px;
-    margin-left: 100px;
+    margin-left: 290px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     position: relative;
@@ -424,28 +557,28 @@ button #direita {
 
 .icons #email{
     top: 110px;
-    left: 140px;
+    left: 250px;
 }
 
 .icons #whatsapp{
-    top: 165px;
-    left: 132px;
+    top: 175px;
+    left: 242px;
     width: 10%;
 }
 
 .icons #insta{
-    top: 230px;
-    left: 140px;
+    top: 250px;
+    left: 250px;
 }
 
 .icons #linkedin{
-    top: 295px;
-    left: 140px;
+    top: 325px;
+    left: 250px;
 }
 
 .icons #github{
-    top: 355px;
-    left: 137px;
+    top: 395px;
+    left: 247px;
     width: 8%;
 }
 
@@ -454,42 +587,56 @@ button #direita {
     text-decoration: none;
     color: black;
     top: 115px;
-    left: 195px;
-    font-size: 20px;
+    left: 325px;
+    font-size: 23px;
 }
 
 .icons #whatsappRAFA{
     position: absolute;
     text-decoration: none;
     color: black;
-    top: 175px;
-    left: 195px;
-    font-size: 20px;
+    top: 185px;
+    left: 325px;
+    font-size: 23px;
 }
 
 .icons #instaRAFA{
     position: absolute;
     text-decoration: none;
     color: black;
-    top: 238px;
-    left: 195px;
-    font-size: 20px;
+    top: 258px;
+    left: 325px;
+    font-size: 23px;
 }
 
 .icons #linkedinRAFA{
     position: absolute;
     text-decoration: none;
     color: black;
-    top: 303px;
-    left: 195px;
-    font-size: 20px;
+    top: 333px;
+    left: 325px;
+    font-size: 23px;
 }
 
 .icons #githubRAFA{
     position: absolute;
     text-decoration: none;
     color: black;
-    top: 366px;
-    left: 195px;
-    font-size: 20px;
+    top: 406px;
+    left: 325px;
+    font-size: 23px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #1E1E1E;
+    color: #DBD1BD;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    height: auto;
+    justify-content: center;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
 }
