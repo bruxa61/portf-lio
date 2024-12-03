@@ -22,9 +22,12 @@ body {
 }
 
 header {
-    padding: 1px 1.5%;
+    padding: 1px 3%;
     background-color: #1E1E1E;
     box-shadow: 0 2px 5px #1E1E1E;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 header>.navbar {
@@ -33,14 +36,14 @@ header>.navbar {
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: #DBD1BD;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     color: #ff4775;
     transform: scale(1.05);
 }
@@ -64,57 +67,57 @@ header .btn-contato button {
     cursor: pointer;
 }
 
-header .btn-contato button:hover{
+header .btn-contato button:hover {
     /* box-shadow: 0px 0px 8px #9c6c05; */
     box-shadow: 6px 6px 0 #9c6c05;
 }
 
 .logo img {
-    width: 100px; 
-    height: auto; 
+    width: 100px;
+    height: auto;
 }
 
 .rafa {
     color: #DBD1BD;
-    font-size: 28px; 
-    margin-right: 250px; 
+    font-size: 28px;
+    margin-right: 250px;
 }
 
 /* PARTE 01 */
-section.parte1{
-    padding: 55px 4%;
+section.parte1 {
+    padding: 160px 4%;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-section.parte1 .flex{
+section.parte1 .flex {
     align-items: center;
     justify-content: center;
     gap: 60px;
 }
 
-.parte1 h1{
+.parte1 h1 {
     color: black;
     font-size: 50px;
     font-weight: 500;
 }
 
-.parte1 h2{
+.parte1 h2 {
     color: #EE5765;
     font-size: 23px;
     font-weight: 500;
 }
 
-.topo p{
+.topo p {
     color: black;
     margin: 20px 0;
     font-weight: 440;
     font-size: 20px;
 }
 
- .curriculo button {
+.curriculo button{
     padding: 10px 40px;
     font-size: 20px;
     font-weight: 500;
@@ -123,60 +126,62 @@ section.parte1 .flex{
     cursor: pointer;
     transition: .2s;
     height: 60px;
- }
+}
 
-.curriculo button:hover{
+.curriculo button:hover {
     /* box-shadow: 0px 0px 8px #ffbe32; */
     transform: scale(1.05);
     box-shadow: 7px 7px 0 #9c6c05;
 }
 
-.rafita img{
+.rafita img {
     margin: -50px 0;
-    width: 520px; 
-    height: auto; 
+    width: 520px;
+    height: auto;
     position: relative;
-    /* animation: flutuar 2s ease-in-out infinite alternate; */
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-/* @keyframes flutuar{
+@keyframes flutuar{
     0%{
         top: 0;
     }
     100%{
         top: 30px;
     }
-} */
+}
 
 /* PARTE 02 */
 .parte2 {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinha no topo */
-    padding: 50px 0px; /* Adiciona um padding para melhor visualização */
+    align-items: flex-start;
+    /* Alinha no topo */
+    padding: 80px 0px;
+    /* Adiciona um padding para melhor visualização */
     background-color: #1E1E1E;
 }
 
 .habilidades {
-    width: 35%; 
+    width: 35%;
     height: 520px;
     background-color: #FBB620;
     box-shadow: 14px 14px 0 #9c6c05;
     margin-left: 100px;
 }
 
-.habilidades h1{
+.habilidades h1 {
     font-weight: 450;
     font-size: 30px;
     margin-top: 20px;
     padding: 20px 27%;
 }
 
-.habilidades ul{
+.habilidades ul {
     list-style-type: none;
 }
 
-.habilidades ul li{
+.habilidades ul li {
     padding: 7px 10%;
     font-size: 18px;
     font-weight: 400;
@@ -184,13 +189,13 @@ section.parte1 .flex{
 
 /* CARROSEL */
 .ferramentas {
-    width: 50%; 
+    width: 50%;
     height: 340px;
     padding: 0px 0%;
     margin: 50px;
 }
 
-.ferramentas h1{
+.ferramentas h1 {
     font-weight: 450;
     font-size: 30px;
     padding: 40px 33%;
@@ -199,42 +204,51 @@ section.parte1 .flex{
 }
 
 .carousel-container {
-    width: 100%; /* O carrossel ocupa toda a largura disponível para ele */
-    height: 150px; /* Define uma altura fixa para o carrossel */
+    width: 100%;
+    /* O carrossel ocupa toda a largura disponível para ele */
+    height: 150px;
+    /* Define uma altura fixa para o carrossel */
     overflow: hidden;
     position: relative;
-    margin-top: 20px; /* Adiciona uma margem superior */
-    
+    margin-top: 20px;
+    /* Adiciona uma margem superior */
+
 }
 
 
 .carousel-items {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 435%; /* 3x a largura do contêiner para 3 slides.  Ajuste conforme necessário.*/
+    width: 435%;
+    /* 3x a largura do contêiner para 3 slides.  Ajuste conforme necessário.*/
 }
 
 .carousel-item {
-    width: calc(100% / 3); /* Cada item ocupa 1/3 da largura do carrossel. Ajuste o denominador de acordo com a quantidade de slides.*/
+    width: calc(100% / 3);
+    /* Cada item ocupa 1/3 da largura do carrossel. Ajuste o denominador de acordo com a quantidade de slides.*/
     height: auto;
     display: flex;
-    flex-direction: column; /* Para empilhar imagem e legenda */
+    flex-direction: column;
+    /* Para empilhar imagem e legenda */
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centraliza o texto da legenda */
+    text-align: center;
+    /* Centraliza o texto da legenda */
 }
 
 .carousel-item img {
-    width: 40%; /* Impede que a imagem ultrapasse o tamanho do item */
+    width: 40%;
+    /* Impede que a imagem ultrapasse o tamanho do item */
     height: auto;
-    margin-bottom: 10px; /* Espaço entre a imagem e a legenda */
+    margin-bottom: 10px;
+    /* Espaço entre a imagem e a legenda */
 }
 
 /* .carousel-item img:hover{
     box-shadow: 2px 2px 8px #ffb3c9;
 } */
 
-.carousel-item p {  
+.carousel-item p {
     font-size: 16px;
     font-weight: 500;
     color: #DBD1BD;
@@ -243,21 +257,21 @@ section.parte1 .flex{
 .carousel-control {
     position: absolute;
     top: 30%;
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.carousel-control:hover{
+.carousel-control:hover {
     transform: scale(1.2);
 }
 
-button #esquerda{
+button #esquerda {
     height: auto;
     width: 4vh;
 }
 
-button #direita{
+button #direita {
     height: auto;
     width: 4vh;
 }
@@ -274,44 +288,46 @@ button #direita{
 .parte3 .TITULO {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinha no topo */
-    padding: 50px 0px; /* Adiciona um padding para melhor visualização */
+    align-items: flex-start;
+    /* Alinha no topo */
+    padding: 50px 0px;
+    /* Adiciona um padding para melhor visualização */
 }
 
-.parte3 .TITULO h1{
+.parte3 .TITULO h1 {
     font-weight: 450;
     font-size: 30px;
     margin-top: 20px;
 }
 
-.projetos1{
+.projetos1 {
     display: flex;
     justify-content: space-around;
     margin: 5%;
     margin-top: 20px;
 }
 
-.projetos1 img{
+.projetos1 img {
     height: auto;
     width: 80vh;
 }
 
-.projetos1 img:hover{
+.projetos1 img:hover {
     transform: scale(1.01);
 }
 
-.projetos2{
+.projetos2 {
     display: flex;
     justify-content: space-around;
     margin: 5%;
 }
 
-.projetos2 img{
+.projetos2 img {
     height: auto;
     width: 80vh;
 }
 
-.projetos2 img:hover{
+.projetos2 img:hover {
     transform: scale(1.01);
 }
 
@@ -319,21 +335,161 @@ button #direita{
 .parte4 {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; /* Alinha no topo */
-    padding: 50px 0px; /* Adiciona um padding para melhor visualização */
+    align-items: flex-start;
+    /* Alinha no topo */
+    padding: 30px 0px;
+    /* Adiciona um padding para melhor visualização */
     background-color: #FF7B89;
 }
 
-.certificados h1{
+.certificados h1 {
     font-weight: 500;
     font-size: 30px;
     margin-top: 20px;
-    padding: 20px 27%;
+    padding: 0px 27%;
     color: #F6EEE1;
+    margin-left: 110px;
 }
 
-.contato{
+.certificados{
+    position: relative;
+}
+
+.certificados img{
+    height: auto;
+    width: 105%;
+    padding: 30px;
+    margin-left: 55px;
+}
+
+.certificados .pastas img{
+    position: absolute;
+    height: auto;
+    width: 33%;
+}
+
+.certificados .pastas img:hover{
+    transform: scale(1.05);
+}
+
+.pastas #certfCLOUD{
+    top: 170px;
+    left: 30px;
+}
+
+.pastas #certfAWS{
+    top: 170px;
+    left: 220px;
+}
+
+.pastas #certfCISCO{
+    top: 170px;
+    left: 410px;
+}
+
+.pastas #certfSENAI{
+    top: 330px;
+    left: 30px;
+}
+
+.contato {
     background-color: #FBB620;
-    width: 100vh;
-    height: 60vh;
+    width: 105vh;
+    height: 75vh;
+    margin-top: 80px;
+    margin-left: 100px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: relative;
+}
+
+.contato h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+.contato .icons img{
+    position: absolute;
+    height: auto;
+    width: 7%;
+}
+
+.contato .icons img:hover{
+    transform: scale(1.1);
+}
+
+.icons #email{
+    top: 110px;
+    left: 140px;
+}
+
+.icons #whatsapp{
+    top: 165px;
+    left: 132px;
+    width: 10%;
+}
+
+.icons #insta{
+    top: 230px;
+    left: 140px;
+}
+
+.icons #linkedin{
+    top: 295px;
+    left: 140px;
+}
+
+.icons #github{
+    top: 355px;
+    left: 137px;
+    width: 8%;
+}
+
+.icons #emailRAFA{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 115px;
+    left: 195px;
+    font-size: 20px;
+}
+
+.icons #whatsappRAFA{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 175px;
+    left: 195px;
+    font-size: 20px;
+}
+
+.icons #instaRAFA{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 238px;
+    left: 195px;
+    font-size: 20px;
+}
+
+.icons #linkedinRAFA{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 303px;
+    left: 195px;
+    font-size: 20px;
+}
+
+.icons #githubRAFA{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 366px;
+    left: 195px;
+    font-size: 20px;
 }
